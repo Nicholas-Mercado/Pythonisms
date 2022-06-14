@@ -5,6 +5,7 @@ class LinkedList:
     '''
     def __init__(self, collection=None):
         self.head = None
+        self.length = 0
         if collection:
             for item in reversed(collection):
                 self.insert(item)
@@ -12,6 +13,7 @@ class LinkedList:
     def insert(self, value):
         current = self.head
         self.head = Node(value, current)
+        self.length += 1
         
     def __str__(self):
         null = 'NULL'
@@ -35,6 +37,9 @@ class LinkedList:
                 current = current.next
 
         return generator()
+    
+    def __len__(self):
+        return self.length
 
 
 class Node:

@@ -5,8 +5,8 @@ from pythonisms_ll.pythonisms_ll import LinkedList
 def test_exists():
     assert LinkedList
 
-def test_instantiate():
-    assert LinkedList()
+# def test_instantiate():
+#     assert LinkedList()
 
 def test_empty_head():
     linked = LinkedList()
@@ -81,3 +81,9 @@ def test_list__can_cast():
     foods = LinkedList(food_list)
 
     assert list(foods) == food_list
+    
+def test_can_range():
+    range1 = range(1, 51)
+    ll = LinkedList(range1)
+    
+    assert len(ll) == 50
