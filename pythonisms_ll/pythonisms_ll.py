@@ -44,6 +44,14 @@ class LinkedList:
     def __eq__(self , other):
         return list(self) == list(other)
     
+    def __getitem__(self, idx):
+        
+        for i, item in enumerate(self):
+            if i == idx:
+                return item
+
+        raise IndexError
+    
 
 
 class Node:

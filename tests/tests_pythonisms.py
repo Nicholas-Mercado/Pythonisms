@@ -124,4 +124,8 @@ def test_equals_not():
 
     assert lla != llb
 
-
+def test_get_item():
+    
+    ll = LinkedList(("apple","apple3","apple2"))
+    
+    assert ll[0] == "apple"
