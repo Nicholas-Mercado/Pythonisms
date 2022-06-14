@@ -1,5 +1,5 @@
 import pytest
-from pythonisms_ll.pythonisms_ll import LinkedList
+from pythonisms.pythonisms_ll import LinkedList
 
 
 def test_exists():
