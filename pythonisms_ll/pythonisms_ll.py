@@ -40,6 +40,10 @@ class LinkedList:
     
     def __len__(self):
         return self.length
+    
+    def __eq__(self , other):
+        return list(self) == list(other)
+    
 
 
 class Node:

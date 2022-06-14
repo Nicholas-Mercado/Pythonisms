@@ -109,3 +109,19 @@ def stop_iter():
     with pytest.raises(StopIteration):
         while True:
             ll = next(iterator)
+            
+def test_equals():
+
+    lla = LinkedList(["apple","banana","cucumber"])
+    llb = LinkedList(["apple","banana","cucumber"])
+
+    assert lla == llb
+
+def test_equals_not():
+
+    lla = LinkedList(["apple","banana2","cucumber"])
+    llb = LinkedList(["apple","banana","cucumber"])
+
+    assert lla != llb
+
+
