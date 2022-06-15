@@ -1,6 +1,5 @@
 from functools import wraps
-from time import time
-
+from time import time , sleep
 
 def exclamation(func):
     @wraps(func)
@@ -25,12 +24,23 @@ def timer(func):
         return result
     return wrapper
 
+def sleep_now(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        sleep(3)
+        return func(*args, **kwargs)
+
+    return wrapper
+
 @exclamation
 @timer
+@sleep_now
 def say(txt):
     return txt
 
+
 @timer
+@sleep_now
 def long_function():
     for x in range(1,101):
         for y in range(1,500):
