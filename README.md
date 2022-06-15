@@ -4,10 +4,26 @@
 
 ## Author: Nicholas Mercado
 
+## Description
+
+This project contains a Linked list class build with the following methods
+
+- insert
+- str
+- get item
+- iter
+- len
+- eq
+
+This project also contains with decorators including:
+
+- sleep now
+- exclamation
+- timer
+
 ## Links and Resources
 
-back-end server url (when applicable)
-front-end application (when applicable)
+[Geek for geeks](https://www.geeksforgeeks.org/decorators-in-python/)
 
 ## Setup
 
@@ -16,11 +32,6 @@ i.e.
 
 e.g. python main.py
 
-
 ## Tests
 
-How do you run tests?
-
-Any tests of note?
-
-Describe any tests that you did not complete, skipped, etc
+[tests](tests/tests_pythonisms.py)
